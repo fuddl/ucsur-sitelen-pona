@@ -170,7 +170,7 @@ const LEX_TABLE_OPENTYPE = {
   "END_CARTOUCHE": String.fromCodePoint(0xF1991),
 }
 
-exports.sitelen = function(inString, { useCartouche=true, useLongPi=true, useOpenType=true } = {}) {
+export function sitelen(inString, { useCartouche = true, useLongPi = true, useOpenType = true } = {}) {
   // let splitRegex = '/(\W'
   // if (useCartouche) { splitRegex += '|\\{|\\}' }
   // if (useLongPi) { splitRegex += '|\\[|\\]' }
